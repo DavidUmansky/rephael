@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Rubik:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+#topHeader .logo {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 32px;
+    color: #0aac0a;
+}
+
+h2,h3 {
+    color: #0aac0a;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.logo span {
+    font-size: 25px;
+    font-family: none;
+    vertical-align: text-top;
+}
+
+#topHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(253, 255, 253);
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    height: 47px;
+    background-color: #b6f3eb;
+}
+
+ul a {
+    padding: 10px 40px;
+    margin: 0 5px;
+    color: #153515;
+}
+
+ul a:hover {
+    color: #81b981;
+}
+
+.content {
+    background: url(images/room.jpg) no-repeat bottom center/cover;
+    height: 650px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.triple {
+    height: 200px;
+    width: 277px;
+    background-color: rgb(69, 199, 59, 0.8);
+    font-family: 'Fredoka', sans-serif;
+    font-size: 32px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-bottom: 8px solid rgb(69, 199, 59);
+}
+
+.about .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.about .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.about .column .column-1, .flex-columns .column .column-2 {
+    height: 100%;
+}
+
+.about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.about .column .column-1, .flex-columns .column .column-2 {
+    height: 100%;
+}
+
+.about .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 70px 70px 40px;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: rgb(39, 182, 192);
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.btn:hover {
+    background-color: #0ba505;
+}
+
+.about h2 {
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.about h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+
+.aboutInner p {
+    margin-bottom: 50px;
+}
+
+.section-padding {
+    padding: 20px 20px 40px;
+    background-color: #0c760c;
+    color: white;
+    height: 680px;
+}
+
+.section-padding h3 {
+    color: white;
+    font-family: inherit;
+}
+
+.flex-grid .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+.flex-grid .column {
+    flex: 45%;
+    max-width: 45%;
+    padding: 0 9px;
+}
+
+.column .serviceItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(73, 219, 73, 0.4);
+    border-radius: 9px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 20px 20px;
+    height: 150px;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 35px;    
+    color: white;
+}
+
+.servicesHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceItem h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
