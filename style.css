@@ -10,6 +10,7 @@ body {
     font-family: 'Rubik', sans-serif;
     line-height: 1.6;
     font-size: 18px;
+    overflow-x: hidden;
 }
 
 #topHeader .logo {
@@ -18,7 +19,7 @@ body {
     color: #0aac0a;
 }
 
-h2,h3 {
+h2, h3 {
     color: #0aac0a;
     font-family: 'Fredoka', sans-serif;
 }
@@ -36,9 +37,15 @@ h2,h3 {
     background-color: rgb(253, 255, 253);
 }
 
+@media(min-width: 1100px) {
+    #topHeader {
+        margin: 0px -140px;
+    }
+}
+
 a {
     text-decoration: none;
-    
+
 }
 
 nav ul {
@@ -60,13 +67,44 @@ ul a:hover {
     color: #81b981;
 }
 
-.content {
-    background: url(images/room.jpg) no-repeat bottom center/cover;
-    height: 650px;
+.content1 {
     position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    height: 640px;
+}
+
+.content2 {
+    background: url(images/room.jpg) no-repeat bottom center/cover;
+}
+
+#call {
+    margin-top: initial;
+    border-radius: initial;
+    padding: 10px 70px;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+}
+
+#what {
+    width: 64px;
+    position: fixed;
+    bottom: 15px;
+    left: 0px;
+    z-index: 1;
+}
+
+#face {
+    position: fixed;
+    bottom: 115px;
+    left: 1px;
+    z-index: 1;
+}
+
+.white {
+    background-color: white;
 }
 
 .triple {
@@ -95,6 +133,7 @@ ul a:hover {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+    background-color: #dbe9ff;
 }
 
 .about .column .column-1, .flex-columns .column .column-2 {
@@ -152,10 +191,9 @@ ul a:hover {
 }
 
 .section-padding {
-    padding: 20px 20px 40px;
-    background-color: #0c760c;
+    padding: 40px 20px 40px;
     color: white;
-    height: 680px;
+    height: 750px;
 }
 
 .section-padding h3 {
@@ -182,7 +220,7 @@ ul a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(73, 219, 73, 0.4);
+    background-color: rgb(12, 180, 12);
     border-radius: 9px;
     margin-bottom: 15px;
     text-align: center;
@@ -192,8 +230,7 @@ ul a:hover {
 
 .services h2 {
     margin-bottom: 30px;
-    font-size: 35px;    
-    color: white;
+    font-size: 35px;
 }
 
 .servicesHead {
@@ -207,6 +244,247 @@ ul a:hover {
     margin-bottom: 10px;
 }
 
+.flex-items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.flex-items>div {
+    width: 33.333%;
+}
+
+.flex-items img {
+    width: 100%;
+    height: 100%;
+}
+
+.happyClients h2 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    color: white;
+}
+
+.icons img {
+    width: initial;
+    margin-bottom: 35px;
+}
+
+
+.icons p {
+    margin-bottom: 35px;
+    font-style: italic;
+}
+
+.icon {
+    padding: 0px 20px;
+}
+
+.happyClients {
+    height: 500px;
+    background-color: #249e22;
+}
+
+.contactHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactHead h2 {
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.contactFlex {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 80px;
+}
+
+.contactFlex div {
+    color: #0aac0a;
+    text-align: center;
+    width: 400px;
+}
+
+.contactFlex h3 {
+    color: #045c04;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+hr {
+    height: 138px;
+    border-color: #defdde;
+    border-style: solid;
+    border-width: 0.1px;
+}
+
+iframe {
+    width: 780px;
+    height: 300px;
+}
+
+
+#map {
+    text-align: center;
+    margin-top: 45px;
+}
+
+footer {
+    background-color: #249e22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    color: white;
+    overflow-y: hidden;
+    padding-top: 5px;
+}
+
+footer img {
+    width: 126px;
+    vertical-align: middle;
+}
+
+#down {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    margin-bottom: 45px;
+}
+
+@media(max-width: 430px) {
+    #topHeader {
+        flex-direction: column;
+        height: 90px;
+    }
+
+    #topHeader .logo {
+        font-size: 26px;
+    }
+
+    ul a {
+        padding: 10px 2px;
+        margin: 0 5px;
+    }
+
+    .content1 {
+        height: 550px;
+        margin: 15px 0px;
+    }
+
+    .off {
+        display: none;
+    }
+
+    .triple {
+        height: 140px;
+        width: 365px;
+    }
+
+    #call {
+        display: none;
+    }
+
+    #face {
+        right: 1px;
+    }
+
+    #what {
+        right: 0px;
+    }
+
+
+    .about .row {
+        flex-direction: column;
+    }
+
+
+
+    .about .column-2 {
+        flex-direction: column;
+        padding: 40px 25px 40px;
+        text-align: center;
+        align-items: center;
+    }
+
+    #white {
+        background-color: white;
+    }
+
+    .section-padding {
+        height: 1366px;
+        padding: 30px 10px 40px;
+    }
+
+    .flex-grid .row {
+        flex-direction: column;
+    }
+
+    .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .column .serviceItem {
+        height: 175px;
+    }
+
+    .flex-items2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-items2>div {
+        width: 100%;
+    }
+
+    .icon {
+        padding: 25px 20px;
+    }
+
+    .section-padding2 {
+        height: 1110px;
+    }
+
+    #down {
+        margin-bottom: 10px;
+    }
+
+    .flex-items3 {
+        flex-direction: column;
+    }   
+    
+    .flex-items3>div {
+        width: 100%;
+        margin-top: -9px;
+    }
+
+    iframe {
+        width: 90%;
+    }
+
+    .contactFlex {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .contactFlex div {
+        margin-bottom: 30px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .section-padding3 {
+        height: 905px;
+    }
 
 
 
@@ -215,8 +493,12 @@ ul a:hover {
 
 
 
+}
 
 
 
-
-
+@media(min-width: 430px) {
+    #addedDiv {
+        display: none;
+    }
+}
